@@ -78,7 +78,16 @@ var masCaro = vehiculoMasCaro(vehiculos);
 var masBarato = vehiculoMasBarato(vehiculos);
 var contiene = contieneYenNombre(vehiculos);
 
+
+//muestra por consola
+console.log(`Marca:${vehiculos[0].marca}//Modelo:${vehiculos[0].modelo}//Puertas:${vehiculos[0].puertas}//Precio $${vehiculos[0].precio}`);
+console.log(`Marca:${vehiculos[1].marca}//Modelo:${vehiculos[1].modelo}//Puertas:${vehiculos[1].puertas}//Precio $${vehiculos[1].precio}`);
+console.log(`Marca:${vehiculos[2].marca}//Modelo:${vehiculos[2].modelo}//Puertas:${vehiculos[2].cilindrada}//Precio $${vehiculos[2].precio}`);
+console.log(`Marca:${vehiculos[3].marca}//Modelo:${vehiculos[3].modelo}//Puertas:${vehiculos[3].cilindrada}//Precio $${vehiculos[3].precio}`);
+console.log("=============================");
 console.log(`Vehiculo mas caro:${masCaro.marca} ${masCaro.modelo}`);
 console.log(`Vehiculo mas barato:${masBarato.marca} ${masBarato.modelo}`);
-console.log(`Vehículo que contiene en el modelo la letra ‘Y’:${contiene.marca}  $${contiene.precio}`);
+console.log(`Vehículo que contiene en el modelo la letra ‘Y’:${contiene.marca} ${contiene.modelo} $${contiene.precio}`);
+console.log("=============================");
+console.log("Vehículos ordenados por precio de mayor a menor:");
 ordernarVehiculos(vehiculos);
