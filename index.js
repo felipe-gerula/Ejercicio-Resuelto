@@ -29,7 +29,6 @@ let vehiculos = [auto1,auto2,moto1,moto2];
 function vehiculoMasCaro(vehiculos){
     let masCaro = vehiculos[0] , i = 0;
     let num = vehiculos.length;
-    console.log(num);
     while(vehiculos.length-1>i){
         if(masCaro.precio <= vehiculos[i].precio){
             masCaro = vehiculos[i];
